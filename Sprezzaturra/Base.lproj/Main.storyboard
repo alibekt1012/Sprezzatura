@@ -8,6 +8,35 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Accessories-->
+        <scene sceneID="QL5-Qp-5wy">
+            <objects>
+                <tableViewController id="7oS-eN-uh4" customClass="AccessoryTableTableViewController" customModule="Sprezzaturra" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="6Jd-1M-u99">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Hya-Rd-hf4">
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Hya-Rd-hf4" id="bC0-JZ-exV">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="7oS-eN-uh4" id="PYa-n0-O2v"/>
+                            <outlet property="delegate" destination="7oS-eN-uh4" id="H0h-49-37X"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Accessories" image="flag.checkered.2.crossed" catalog="system" id="LAP-n7-Caz"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZLt-ZL-uTa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="95" y="256"/>
+        </scene>
         <!--Sprezzatura Style-->
         <scene sceneID="Khe-8W-hlE">
             <objects>
@@ -62,11 +91,80 @@
                             <outlet property="delegate" destination="lec-6q-TRq" id="7VY-qc-MnF"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Rules" image="book" catalog="system" id="rCd-iz-ZLR"/>
                     <navigationItem key="navigationItem" title="Sprezzatura Style" id="RZ5-A8-ttV"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RPq-0i-9yL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-0.76335877862595414" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="108" y="975"/>
+        </scene>
+        <!--Add Accessories-->
+        <scene sceneID="ZXx-2o-9Ib">
+            <objects>
+                <viewController id="gcC-dq-rmu" customClass="AddAccessoryViewController" customModule="Sprezzaturra" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q3u-Mi-mLV">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7s2-05-kN9">
+                                <rect key="frame" x="40" y="242" width="313" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Pgl-8n-Saa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QTz-AG-D7E">
+                                <rect key="frame" x="120" y="322" width="153" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="4xl-lW-VoI"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Add Accessory"/>
+                                <connections>
+                                    <action selector="addAccessory:" destination="gcC-dq-rmu" eventType="touchUpInside" id="s2K-Hh-Agl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jIm-JV-lj5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jIm-JV-lj5" firstAttribute="trailing" secondItem="7s2-05-kN9" secondAttribute="trailing" constant="40" id="BLT-u0-bxJ"/>
+                            <constraint firstItem="7s2-05-kN9" firstAttribute="top" secondItem="jIm-JV-lj5" secondAttribute="top" constant="139" id="Hus-eH-MKb"/>
+                            <constraint firstItem="7s2-05-kN9" firstAttribute="leading" secondItem="jIm-JV-lj5" secondAttribute="leading" constant="40" id="M6g-BA-NnT"/>
+                            <constraint firstItem="QTz-AG-D7E" firstAttribute="top" secondItem="7s2-05-kN9" secondAttribute="bottom" constant="40" id="Mnw-CR-i0Y"/>
+                            <constraint firstItem="QTz-AG-D7E" firstAttribute="leading" secondItem="jIm-JV-lj5" secondAttribute="leading" constant="120" id="wyy-XO-jTQ"/>
+                            <constraint firstItem="jIm-JV-lj5" firstAttribute="trailing" secondItem="QTz-AG-D7E" secondAttribute="trailing" constant="120" id="xqM-OI-767"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Add Accessories" image="plus.rectangle" catalog="system" id="Ojp-si-tDd"/>
+                    <connections>
+                        <outlet property="textField" destination="7s2-05-kN9" id="Xg3-uT-Qcc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vfL-8V-l5H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="108" y="1715"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="bPW-cR-HFh">
+            <objects>
+                <tabBarController id="Ilt-YK-1fl" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="p3a-le-0dK"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0kh-Pu-QIR">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="gcC-dq-rmu" kind="relationship" relationship="viewControllers" id="Ybo-c2-YR6"/>
+                        <segue destination="7oS-eN-uh4" kind="relationship" relationship="viewControllers" id="w5i-iN-dw3"/>
+                        <segue destination="lec-6q-TRq" kind="relationship" relationship="viewControllers" id="BVv-IR-Ggd"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zBn-dE-Y0E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-851" y="975"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -117,7 +215,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="866.41221374045801" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="1027" y="975"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eto-ri-0DY">
@@ -130,15 +228,18 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="lec-6q-TRq" kind="relationship" relationship="rootViewController" id="QkV-a9-JLe"/>
+                        <segue destination="Ilt-YK-1fl" kind="relationship" relationship="rootViewController" id="uat-S4-hB7"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9wd-zD-c3Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-927.48091603053433" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="-1778" y="975"/>
         </scene>
     </scenes>
     <resources>
+        <image name="book" catalog="system" width="128" height="99"/>
+        <image name="flag.checkered.2.crossed" catalog="system" width="128" height="72"/>
+        <image name="plus.rectangle" catalog="system" width="128" height="93"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

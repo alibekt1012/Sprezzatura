@@ -15,6 +15,9 @@
 		1D5F937D2A6BFB8100A4EECF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D5F937B2A6BFB8100A4EECF /* LaunchScreen.storyboard */; };
 		1D5F93852A6BFD4400A4EECF /* Styleguide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5F93842A6BFD4400A4EECF /* Styleguide.swift */; };
 		1D5F93872A6BFDBE00A4EECF /* StyleGuideTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5F93862A6BFDBE00A4EECF /* StyleGuideTableViewController.swift */; };
+		1D5F93AF2A6E281800A4EECF /* Accessory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5F93AE2A6E281800A4EECF /* Accessory.swift */; };
+		1D5F93B12A6E287100A4EECF /* AccessoryTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5F93B02A6E287100A4EECF /* AccessoryTableTableViewController.swift */; };
+		1D5F93B32A6E297300A4EECF /* AddAccessoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5F93B22A6E297300A4EECF /* AddAccessoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		1D5F937E2A6BFB8100A4EECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D5F93842A6BFD4400A4EECF /* Styleguide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styleguide.swift; sourceTree = "<group>"; };
 		1D5F93862A6BFDBE00A4EECF /* StyleGuideTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleGuideTableViewController.swift; sourceTree = "<group>"; };
+		1D5F93AE2A6E281800A4EECF /* Accessory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accessory.swift; sourceTree = "<group>"; };
+		1D5F93B02A6E287100A4EECF /* AccessoryTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessoryTableTableViewController.swift; sourceTree = "<group>"; };
+		1D5F93B22A6E297300A4EECF /* AddAccessoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccessoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,9 @@
 				1D5F93792A6BFB8100A4EECF /* Assets.xcassets */,
 				1D5F937B2A6BFB8100A4EECF /* LaunchScreen.storyboard */,
 				1D5F937E2A6BFB8100A4EECF /* Info.plist */,
+				1D5F93AE2A6E281800A4EECF /* Accessory.swift */,
+				1D5F93B02A6E287100A4EECF /* AccessoryTableTableViewController.swift */,
+				1D5F93B22A6E297300A4EECF /* AddAccessoryViewController.swift */,
 			);
 			path = Sprezzaturra;
 			sourceTree = "<group>";
@@ -145,9 +154,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D5F93752A6BFB8000A4EECF /* ViewController.swift in Sources */,
+				1D5F93AF2A6E281800A4EECF /* Accessory.swift in Sources */,
 				1D5F93712A6BFB8000A4EECF /* AppDelegate.swift in Sources */,
 				1D5F93872A6BFDBE00A4EECF /* StyleGuideTableViewController.swift in Sources */,
+				1D5F93B12A6E287100A4EECF /* AccessoryTableTableViewController.swift in Sources */,
 				1D5F93852A6BFD4400A4EECF /* Styleguide.swift in Sources */,
+				1D5F93B32A6E297300A4EECF /* AddAccessoryViewController.swift in Sources */,
 				1D5F93732A6BFB8000A4EECF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
